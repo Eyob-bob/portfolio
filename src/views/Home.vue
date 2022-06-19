@@ -13,7 +13,7 @@ import Footer from '../components/Footer.vue';
             </div>
             <div class="btns">
                 <RouterLink class="about-btn" to="/about">About me</RouterLink>
-                <a class="download-btn" download="resume" href="https://eyob-portfolio.netlify.app/images/Resume-Eyob-Melese.pdf">Download resume</a>
+                <a class="download-btn" download="resume" href="https://eyob-portfolio.netlify.app/docs/Resume-Eyob-Melese.pdf">Download resume</a>
             </div>
         </div>
     </div>
