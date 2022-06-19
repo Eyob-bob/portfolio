@@ -4,7 +4,6 @@ import { RouterLink } from 'vue-router';
 
 const navLinks = ref('element')
 const hamberger = ref('element')
-const navLink = ref('element')
 
 function toggleSidebar() {
     if (navLinks.value.dataset.visibility === 'false') {
