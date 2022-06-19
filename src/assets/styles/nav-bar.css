@@ -85,9 +85,9 @@ a.logo-text {
 .social-media .twit:hover {
   fill: rgb(9, 119, 192);
 }
-.social-media .inst:hover {
-  fill: rgb(192, 9, 9);
-}
+/* .social-media .git:hover {
+  fill: rgb(31, 31, 31);
+} */
 .social-media .link:hover {
   fill: rgb(9, 21, 192);
 }
