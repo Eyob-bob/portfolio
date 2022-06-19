@@ -1,0 +1,30 @@
+#home {
+  height: calc(100vh - 81px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e9e8e6;
+}
+
+.text {
+  margin-bottom: 2rem;
+}
+
+.text h3 {
+  color: rgb(37, 37, 37);
+}
+
+a.about-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #34b7a7;
+  color: whitesmoke;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1rem;
+}

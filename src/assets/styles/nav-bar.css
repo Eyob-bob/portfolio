@@ -1,0 +1,150 @@
+nav {
+  background-color: #e9e8e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.logo-text {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+a.logo-text {
+  color: #222222;
+  border: none;
+  text-transform: uppercase;
+}
+
+.logo-text > span {
+  color: orangered;
+  font-size: 1.7rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: #787777;
+  font-weight: 600;
+}
+
+.link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #34b7a7;
+  margin: auto;
+  border-radius: 2px;
+  transition: all ease 0.5s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.nav-link:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.nav-link-active::after {
+  width: 100%;
+}
+
+.nav-link-active {
+  color: #222222;
+}
+
+.social-media {
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media svg {
+  height: 20px;
+  aspect-ratio: 1;
+  transition: all ease 0.5s;
+}
+.social-media a {
+  display: grid;
+  place-content: center;
+}
+
+.social-media .tel:hover {
+  fill: rgb(0, 15, 228);
+}
+.social-media .twit:hover {
+  fill: rgb(9, 119, 192);
+}
+.social-media .inst:hover {
+  fill: rgb(192, 9, 9);
+}
+.social-media .link:hover {
+  fill: rgb(9, 21, 192);
+}
+
+.hamberger {
+  z-index: 9999;
+  cursor: pointer;
+  display: none;
+}
+.hamberger > div {
+  width: 1.8rem;
+  height: 4px;
+  background-color: #222222;
+  transition: all 0.5s;
+  border-radius: 3px;
+}
+
+.hamberger[aria-expanded="true"] > div:first-child {
+  transform: rotate(45deg) translateY(6px);
+}
+
+.hamberger[aria-expanded="true"] > div:nth-child(2) {
+  display: none;
+}
+
+.hamberger[aria-expanded="true"] > div:last-child {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+.hamberger > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 550px) {
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    inset: 0 0 0 30%;
+    padding: min(20%, 10rem) 2rem;
+    transform: translateX(100%);
+    transition: all ease-out 0.5s;
+    background-color: #e9e8e6;
+  }
+
+  .nav-links[data-visibility="true"] {
+    transform: translateX(0);
+  }
+
+  .hamberger {
+    display: block;
+  }
+}
+
+@media (max-width: 350px) {
+  .social-media {
+    display: none;
+  }
+}
